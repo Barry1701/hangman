@@ -1,0 +1,39 @@
+[
+
+{
+    "pytanie":"W ktorym roku pojawil sie Python?",
+    "a": 1985,
+    "b": 1991,
+    "c": 1995,
+    "d": 2001,
+    "prawidlowa_odpowiedz": "b"
+
+    
+},
+
+{
+    "pytanie":"Ktora planeta od Slonca jest Ziemia?",
+    "a": "pierwsza",
+    "b": "druga",
+    "c": "trzecia",
+    "d": "czwarta",
+    "prawidlowa_odpowiedz": "c"
+
+    
+},
+
+{
+    "pytanie":"Ktory aktor wcielil sie w role Harrego Pottera?",
+    "a": "Daniel Radcliffe",
+    "b": "Rupert Green",
+    "c": "Jason Mamoa",
+    "d": "Cezary Pazura",
+    "prawidlowa_odpowiedz": "a"
+
+    
+}
+
+
+
+
+]
