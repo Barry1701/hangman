@@ -41,8 +41,8 @@ digits = int(input("Ile cyfr ma miec haslo? "))
 update_characters_left(digits)
 
 if characters_left > 0:
-    print("Nie wszytkie pola zostaly wykozystane.Reszta zostanie uzupelniona cyframi")
-    digits += characters_left
+    print("Nie wszytkie pola zostaly wykozystane.Reszta zostanie uzupelniona malymi literami")
+    lowercase_letters += characters_left
 print()
 print("Dlugosc Hasla:", password_length )
 print("Male Litery:", lowercase_letters )
@@ -51,7 +51,22 @@ print("Znaki Specjalne:", special_signs)
 print("Cyfry:", digits)
 
 
-for i in range(password_length):
+for _ in range(password_length):
     if lowercase_letters > 0:
         password.append(random.choice(string.ascii_lowercase))
-        lowercase`
+        lowercase_letters -= 1
+
+    if uppercase_letters > 0:
+        password.append(random.choice(string.ascii_uppercase))
+        uppercase_letters -= 1
+
+    if special_signs > 0:
+        password.append(random.choice(string.punctuation))
+        special_signs -= 1
+    
+    if digits > 0:
+        password.append(random.choice(string.digits))
+        digits -= 1
+
+random.shuffle(password)
+print("Wygenerowane Haslo:", "".join(password))
